@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="lib/angular-material/angular-material.layouts.min.css">
+  <link rel="stylesheet" href="lib/angular-material-icons/angular-material-icons-0.6.0/angular-material-icons.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="app/app.js"></script>
+  <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+
+  <!-- Material -->
+  <script src="lib/angular-material/angular-material.min.js"></script>
+  <script src="lib/angular-material/angular-material-mocks.js"></script>
+
+
+  <!-- Libs -->
+  <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="lib/angular-aria/angular-aria.min.js"></script>
+  <script type="text/javascript" src="lib/angular-material-icons/angular-material-icons-0.6.0/angular-material-icons.min.js"></script>
+
+
+  <!-- Controllers -->
+  <script type="text/javascript" src="app/controllers/HomeCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/SidebarCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/addCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/updateCtrl.js"></script>
+  <script type="text/javascript" src="app/controllers/showCtrl.js"></script>
+
+
+  <!-- filters -->
+  <script type="text/javascript" src="app/filters/range.js"></script>
+
+  <!-- Services -->
+  <script type="text/javascript" src="app/services/wine.js"></script>
+</head>
+<body>
+<ng-include  src="'partials/nav.html'"></ng-include>
+<ion-nav-view>
+</ion-nav-view>
+</body>
+</html>

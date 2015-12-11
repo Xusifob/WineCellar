@@ -1,0 +1,1 @@
+sass -r sass-globbing --watch index.scss:../css/index.css

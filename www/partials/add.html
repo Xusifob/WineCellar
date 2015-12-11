@@ -1,0 +1,17 @@
+<ion-view>
+    <md-input-container>
+        <label>Nom</label>
+        <input ng-model="Add.wineService.wine.name" required type="text">
+    </md-input-container>
+    <md-input-container class="md-block">
+        <label>Description</label>
+        <textarea ng-model="Add.wineService.wine.description" columns="1" md-maxlength="150" rows="5"></textarea>
+    </md-input-container>
+    <md-input-container style="margin-right: 10px;">
+        <label>Année</label>
+        <md-select ng-model="Add.wineService.wine.year">
+            <md-option ng-repeat="n in [] | range:100" value="{{Add.date - $index}}">{{Add.date - $index}}</md-option>
+        </md-select>
+    </md-input-container>
+    <md-button class="md-raised md-primary" ng-click="Add.addWine()">{{Add.button}}</md-button>
+</ion-view>

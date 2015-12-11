@@ -1,0 +1,31 @@
+<div ng-controller="SidebarCtrl as Sidebar" layout="column" ng-cloak>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" ng-click="Sidebar.toggleLeft()" aria-label="Settings">
+                <ng-md-icon icon="menu" style="fill:#ffffff"></ng-md-icon>
+            </md-button>
+            <h2 class="white-text">
+                <span>Cellar</span>
+            </h2>
+        </div>
+    </md-toolbar>
+    <section layout="row" flex ng-controller="LeftCtrl">
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" on-swipe-left="close()"  md-component-id="left">
+            <md-toolbar class="md-theme-indigo">
+                <h1 class="md-toolbar-tools">
+                    <md-button class="md-icon-button"  ng-click="close()" aria-label="Settings">
+                        <ng-md-icon icon="menu" style="fill:#ffffff"></ng-md-icon>
+                    </md-button>
+                </h1>
+            </md-toolbar>
+            <md-content layout-padding ng-controller="LeftCtrl">
+                <md-list>
+                    <md-list-item class="list-item-navbar" ng-click="redirect('/')" >
+                        <ng-md-icon icon="local_bar"></ng-md-icon>
+                        <p class="list-navbar"><a href="#/">Liste des vins</a></p>
+                    </md-list-item>
+                </md-list>
+            </md-content>
+        </md-sidenav>
+    </section>
+</div>

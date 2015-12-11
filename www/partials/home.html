@@ -1,0 +1,12 @@
+<ion-view view-title="homepage">
+    <md-list-item class="md-3-line" ng-repeat="wine in Home.wineService.wines">
+        <div class="md-list-item-text" layout="column">
+            <h3>{{ wine.name}}</h3>
+            <h4>{{ wine.description}}</h4>
+            <p>{{wine.year}} <md-button class="md-warn" ng-click="Home.wineService.removeWine($index)">Supprimer</md-button></p>
+        </div>
+    </md-list-item>
+    <md-button class="md-primary md-fab md-fab-bottom-right mg-bottom-50-important" ng-href="#/add" >
+        <ng-md-icon icon="add" style="fill:#ffffff"></ng-md-icon>
+    </md-button>
+</ion-view>
